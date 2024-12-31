@@ -1,0 +1,13 @@
+[package]
+name = "planetserve-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.9"
+brotli = "7.0.0"
+clap = { version = "4.5.23", features = ["derive"] }
+serde = { version = "1.0.217", features = ["derive"] }
+tokio = { version =  "1.42.0", features = ["rt", "rt-multi-thread", "macros"] }
+futures-core = "0.3.31"
+tower-http = { version = "0.6.2", features = ["cors"] }
